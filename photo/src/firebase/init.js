@@ -1,5 +1,6 @@
 import firebase from 'firebase'
-import firestone from 'firebase/firestone'
+import firestore from 'firebase/firestore'
+import { Timestamp } from '@firebase/firestore-types';
 // Initialize Firebase
 var config = {
 apiKey: "AIzaSyASVoPpeU9dF8Px8jLgkUFI9lKpSrLTRoo",
@@ -9,7 +10,9 @@ projectId: "photo-dev-opp-chat",
 storageBucket: "photo-dev-opp-chat.appspot.com",
 messagingSenderId: "996592822475"
 };
-const firebaseApp= firebase.initializeApp(config);
-firebaseApp.firestone().settings{{ timestampsInSnapshots: true}}
+const firebaseApp = firebase.initializeApp(config);
+firebaseApp.firestore().settings;{{TimestampInsnapshots: true}}
 
-export default firebaseApp.firestone()
+
+
+export default firebaseApp.firestore()
